@@ -73,6 +73,7 @@ module.exports = function() {
   var circular = new (require("./circular-buffer.js"))();
   var id = require("./identifiers.js");
   var records = [];
+  this.records = records;
   var maxRecords = 5000;
   var lastRecord = -1;
   var filteredRecords = 0;
